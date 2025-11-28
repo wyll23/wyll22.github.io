@@ -1,0 +1,189 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================================
+   BOTÃO MENU MOBILE
+================================ */
+.btn-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* escondido no desktop */
+}
+
+/* ================================
+   HEADER
+================================ */
+header {
+    width: 100%;
+    padding: 15px 40px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+/* sombra ao rolar (JS) */
+header.ativo {
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
+}
+.logo {
+    font-size: 28px;
+    color: #13698f;
+    font-weight: bold;
+    padding: -30px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #13698f;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #1bbbd6;
+}
+.agendar {
+    background: #1bbbd6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.agendar:hover {
+    background: #13698f;
+}
+.agendar:active {
+    transform: scale(0.95);
+}
+.agendar:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(27, 187, 214, 0.5);
+}
+
+/* ================================
+   MENU SECUNDÁRIO
+================================ */
+.menu {
+    background: #13698f;
+    padding: 10px 30px;
+}
+
+.login-signup {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.login-signup a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-signup a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   MAIN
+================================ */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* ================================
+        SESSÕES
+================================ */
+.sessao {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sessao h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #13698f;
+}
+
+/* itens principais */
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.items div {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.items div:hover {
+    transform: scale(1.03);
+}
+
+/* ================================
+        PLANOS
+================================ */
+.planos {
+    display: flex;
+    gap: 40px;;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+footer {
+    background: #13698f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
